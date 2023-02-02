@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="BookedCustomerPane" prefHeight="869.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlight.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.CustomerFormBookingController">
+   <children>
+      <Pane prefHeight="90.0" prefWidth="1728.0" styleClass="backgroundColor">
+         <children>
+            <Text layoutX="542.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer  Booking form" textAlignment="CENTER">
+               <font>
+                  <Font name="Gabriola" size="71.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="tblBooking" layoutX="14.0" layoutY="338.0" prefHeight="517.0" prefWidth="1704.0" styleClass="backgroundColor" stylesheets="@../CssFile/yellow.css">
+        <columns>
+          <TableColumn fx:id="tblBookId" prefWidth="157.99996948242188" text="booked_id" />
+            <TableColumn fx:id="tblVehicleId" prefWidth="203.0" text="vehicle_id" />
+          <TableColumn fx:id="tblvehicle_type" prefWidth="327.0" text="vehicle_type" />
+            <TableColumn fx:id="tblvehicle_number_plate" prefWidth="265.0" text="vehicle_number_plate" />
+            <TableColumn fx:id="tblbooked_description" prefWidth="512.0" text="booked_description" />
+            <TableColumn fx:id="tbldate" prefWidth="234.0" text="date" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtAddBookId" focusColor="WHITE" layoutX="147.0" layoutY="164.0" onAction="#txtAddBookIdOnAction" prefHeight="31.0" prefWidth="179.0" promptText="booked_id" />
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="101.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-key-security-50.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtbookDescription" focusColor="WHITE" layoutX="532.0" layoutY="164.0" onAction="#txtbookDescriptionOnAction" prefHeight="31.0" prefWidth="314.0" promptText="booked_id" text="booked_description" />
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="484.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-document-32.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtVehicleNumberPlate" focusColor="WHITE" layoutX="1020.0" layoutY="164.0" onAction="#txtVehicleNumberPlateOnAction" prefHeight="31.0" prefWidth="243.0" promptText="booked_id" text="vehicle_number_plate" />
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="972.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-numbers-input-form-100.png" />
+         </image>
+      </ImageView>
+      <JFXDatePicker fx:id="bookDate" defaultColor="#070707" layoutX="1435.0" layoutY="164.0" onAction="#bookDateOnAction" promptText="booked date" />
+      <JFXButton fx:id="btnbooked" layoutX="1475.0" layoutY="276.0" onAction="#btnbookedOnAction" prefHeight="50.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="backgroundColor" stylesheets="@../CssFile/DarkBlueAndLightBlue.css" text="Booked" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Book" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Shadow color="#000000" />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="txtVehicleId" focusColor="WHITE" layoutX="578.0" layoutY="238.0" onAction="#txtVehicleIdOnAction" prefHeight="31.0" prefWidth="179.0" promptText="booked_id" text="vehicle_id" />
+      <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="534.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-key-security-50.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtVehicleType" focusColor="WHITE" layoutX="885.0" layoutY="238.0" onAction="#txtVehicleTypeOnAction" prefHeight="31.0" prefWidth="314.0" promptText="booked_id" text="vehicle_type" />
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="837.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-document-32.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

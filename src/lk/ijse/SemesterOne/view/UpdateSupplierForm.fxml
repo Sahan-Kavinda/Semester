@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="UpdateSupplierPane" prefHeight="869.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlight.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.UpdateSupplierFormController">
+   <children>
+      <Button layoutX="643.0" layoutY="739.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="482.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <Pane prefHeight="90.0" prefWidth="1728.0" styleClass="backgroundColor">
+         <children>
+            <Text layoutX="542.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Supplier">
+               <font>
+                  <Font name="Gabriola" size="71.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtUpdateSupName" focusColor="WHITE" layoutX="597.0" layoutY="377.0" prefHeight="31.0" prefWidth="600.0" promptText=" Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="541.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-customer-50.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUpdateSupAddress" focusColor="WHITE" layoutX="597.0" layoutY="449.0" prefHeight="31.0" prefWidth="600.0" promptText=" Address">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="541.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-home-address-50.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUpdateSupEmail" focusColor="WHITE" layoutX="597.0" layoutY="519.0" prefHeight="31.0" prefWidth="600.0" promptText=" Email">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="541.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-supplier-32%20(2).png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUpdateSupContact" focusColor="WHITE" layoutX="597.0" layoutY="590.0" prefHeight="31.0" prefWidth="600.0" promptText=" Contact">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="541.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-ringing-phone-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnUpdateSupplier" layoutX="643.0" layoutY="733.0" onAction="#btnUpdateSupplierOnAction" prefHeight="79.0" prefWidth="482.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="backgroundColor" text="Update">
+         <font>
+            <Font name="Franklin Gothic Book" size="42.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Shadow color="#000000" />
+         </effect>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbSelectUpdateCusId" layoutX="1237.0" layoutY="123.0" onAction="#cmbSelectUpdateCusIdOnAction" prefHeight="31.0" prefWidth="329.0" promptText="select Udate Sup_id" />
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="1154.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-search-64.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblUpdateSelectviewSupTable" layoutX="2.0" layoutY="199.0" prefHeight="145.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightand%20white.css">
+         <columns>
+            <TableColumn fx:id="sup_id" prefWidth="144.0" text="sup_id" />
+            <TableColumn fx:id="sup_name" prefWidth="384.0" text="sup_name" />
+            <TableColumn fx:id="sup_address" prefWidth="507.0" text="sup_address" />
+            <TableColumn fx:id="sup_email" prefWidth="415.0" text="sup_email" />
+            <TableColumn fx:id="sup_contact" prefWidth="277.0" text="sup_contact" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

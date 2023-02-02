@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="996.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.MenuFormController">
+   <children>
+      <Pane fx:id="menuPane" prefHeight="996.0" prefWidth="192.0" styleClass="backgroundColor" stylesheets="@../CssFile/DarkBlueAndLightBlue.css">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-user-30.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnCustomer" layoutX="56.0" layoutY="54.0" onAction="#btnCustomerOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Customer" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-admin-settings-male-48%20(2).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnEmployee" layoutX="56.0" layoutY="154.0" onAction="#btnEmployeeOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Employee" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-supplier-64%20(3).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnSupplier" layoutX="56.0" layoutY="253.0" onAction="#btnSupplierOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Supplier" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-open-box-50%20(2).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnItem" layoutX="56.0" layoutY="459.0" onAction="#btnItemOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Item" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-get-cash-100%20(2).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnPayment" layoutX="56.0" layoutY="559.0" onAction="#btnPaymentOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Payment" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-supplier-64%20(1).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnOrder" layoutX="56.0" layoutY="356.0" onAction="#btnOrderOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="OrderBill" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="14.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-combo-chart-90%20(2).png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnReport" layoutX="56.0" layoutY="667.0" onAction="#btnReportOnAction" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Report" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="MenuLoadPane" layoutX="192.0" prefHeight="996.0" prefWidth="1728.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ItemFormPane" prefHeight="996.0" prefWidth="1728.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.ItemFormController">
+   <children>
+      <Pane fx:id="loadPane" prefHeight="996.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlight.css">
+         <children>
+            <HBox prefHeight="80.0" prefWidth="1728.0" styleClass="backgroundColor">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Item Form">
+                     <HBox.margin>
+                        <Insets left="650.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="66.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Pane fx:id="tablePane" layoutY="134.0" prefHeight="869.0" prefWidth="1728.0">
+               <children>
+                  <TableView fx:id="tblAllitems" prefHeight="869.0" prefWidth="1728.0" styleClass="backgroundColor">
+                     <columns>
+                        <TableColumn fx:id="item_code" prefWidth="144.0" text="item_code" />
+                        <TableColumn fx:id="item_description" prefWidth="384.0" text="item_description" />
+                        <TableColumn fx:id="item_name" prefWidth="507.0" text="item_name" />
+                        <TableColumn fx:id="unit_price" prefWidth="415.0" text="unit_price" />
+                        <TableColumn fx:id="qty_on_hand" prefWidth="277.0" text="qty_on_hand" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutY="80.0" prefHeight="54.0" prefWidth="1728.0" styleClass="backgroundColor">
+               <children>
+                  <ImageView fx:id="ItemAdd" accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="5.0" onMouseClicked="#ItemAddOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-add-new-50.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="ItemUpdate" accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="85.0" layoutY="5.0" onMouseClicked="#ItemUpdateOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-update-64.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="ItemDelete" accessibleRole="BUTTON" fitHeight="45.0" fitWidth="45.0" layoutX="157.0" layoutY="5.0" onMouseClicked="#ItemDeleteOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-remove-32.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

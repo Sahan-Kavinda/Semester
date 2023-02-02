@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AddItemPane" prefHeight="869.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlight.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.AddItemFormController">
+   <children>
+      <Button layoutX="791.0" layoutY="704.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="482.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <Pane prefHeight="90.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/blueandperpule.css">
+         <children>
+            <Text layoutX="542.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add item">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="61.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtAddItemCodeId" focusColor="WHITE" layoutX="824.0" layoutY="274.0" onAction="#txtAddItemCodeIdOnAction" prefHeight="31.0" prefWidth="600.0" promptText="item code">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="774.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-key-security-50.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtAddItemDesc" focusColor="WHITE" layoutX="824.0" layoutY="343.0" onAction="#txtAddItemDescOnAction" prefHeight="31.0" prefWidth="600.0" promptText="description">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="768.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-document-32.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtAdditemName" focusColor="WHITE" layoutX="824.0" layoutY="415.0" onAction="#txtAdditemNameOnAction" prefHeight="31.0" prefWidth="600.0" promptText="item Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="768.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-name-tag-80.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtAddunitPrice" focusColor="WHITE" layoutX="824.0" layoutY="485.0" onAction="#txtAddunitPriceOnAction" prefHeight="31.0" prefWidth="600.0" promptText="unit price">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="768.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-get-cash-50.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtAddqty" focusColor="WHITE" layoutX="824.0" layoutY="556.0" onAction="#txtAddqtyOnAction" prefHeight="31.0" prefWidth="600.0" promptText="qty on hand">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="42.0" fitWidth="59.0" layoutX="768.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-open-box-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAddItem" layoutX="791.0" layoutY="698.0" onAction="#btnAddItemOnAction" prefHeight="79.0" prefWidth="482.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="backgroundColor" text="Add">
+         <font>
+            <Font name="Franklin Gothic Book" size="42.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Shadow color="#000000" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CustomerFormPane" prefHeight="996.0" prefWidth="1728.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.CustomerFormController">
+   <children>
+      <Pane fx:id="loadPane" prefHeight="996.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlight.css">
+         <children>
+            <Pane layoutY="80.0" prefHeight="54.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlightgreen.css">
+               <children>
+                  <ImageView fx:id="customerAdd" accessibleRole="BUTTON" fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#customerAddOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Untitled_design-removebg-preview.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="CustomerEdit" accessibleRole="BUTTON" fitHeight="42.0" fitWidth="42.0" layoutX="85.0" layoutY="6.0" onMouseClicked="#customerEditOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-update-64.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="CustomerBooking" accessibleRole="BUTTON" fitHeight="42.0" fitWidth="42.0" layoutX="152.0" layoutY="6.0" onMouseClicked="#CustomerBookingOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-tear-off-calendar-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="CustomerDelete" accessibleRole="BUTTON" fitHeight="42.0" fitWidth="42.0" layoutX="222.0" layoutY="6.0" onMouseClicked="#CustomerDeleteOnClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-remove-32.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <HBox prefHeight="80.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/DarkBlueAndLightBluelefttoright.css">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Form">
+                     <HBox.margin>
+                        <Insets left="650.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Freestyle Script" size="66.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Pane fx:id="tablePane" layoutY="134.0" prefHeight="869.0" prefWidth="1728.0">
+               <children>
+                  <TableView fx:id="tblCusTable" prefHeight="869.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightand%20white.css">
+                     <columns>
+                        <TableColumn prefWidth="144.0" text="cus_id" />
+                        <TableColumn prefWidth="384.0" text="cus_name" />
+                        <TableColumn prefWidth="507.0" text="cus_address" />
+                        <TableColumn prefWidth="415.0" text="cus_email" />
+                        <TableColumn prefWidth="277.0" text="cus_contact" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="EmployeePaymentPane" prefHeight="869.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/lightblueandlight.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.EmployeePaymentFormController">
+   <children>
+      <Button layoutX="781.0" layoutY="766.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="482.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <Pane prefHeight="90.0" prefWidth="1728.0" styleClass="backgroundColor">
+         <children>
+            <Text layoutX="541.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Employee Payment">
+               <font>
+                  <Font name="Gabriola" size="71.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnAddPayment" layoutX="781.0" layoutY="760.0" onAction="#btnAddPaymentOnAction" prefHeight="79.0" prefWidth="482.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="backgroundColor" text="Add Payment">
+         <font>
+            <Font name="Franklin Gothic Book" size="42.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Shadow color="#000000" />
+         </effect>
+      </JFXButton>
+      <Text layoutX="1093.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Salary">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtsetSalary" layoutX="1197.0" layoutY="143.0" onAction="#txtsetSalaryOnAction" prefHeight="42.0" prefWidth="197.0" promptText="set amount" text="set salary" />
+      <JFXComboBox fx:id="comEmpId" layoutX="439.0" layoutY="140.0" onAction="#txtEmpPayIdOnAction" prefHeight="51.0" prefWidth="197.0" promptText="   Select Emp_id" />
+      <Text layoutX="53.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Pay_id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmpPayId" layoutX="146.0" layoutY="154.0" onAction="#txtEmpPayIdOnAction" prefHeight="42.0" prefWidth="150.0" promptText="add pay id" />
+      <Text layoutX="338.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select emp id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="EmpPaymentTable" layoutX="128.0" layoutY="241.0" prefHeight="501.0" prefWidth="1473.0">
+        <columns>
+          <TableColumn fx:id="emp_pay_id" prefWidth="154.99996948242188" text="emp_pay_id" />
+          <TableColumn fx:id="emp_id" prefWidth="190.00003051757812" text="emp_id" />
+            <TableColumn fx:id="emp_name" prefWidth="450.0" text="emp_name" />
+            <TableColumn fx:id="salary" prefWidth="417.9999694824219" text="salary" />
+            <TableColumn fx:id="date" prefWidth="261.0" text="date" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="comEmpName" layoutX="814.0" layoutY="138.0" onAction="#comEmpNameOnAction" prefHeight="51.0" prefWidth="197.0" promptText="   Select Emp_name" />
+      <Text layoutX="688.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select emp name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXDatePicker fx:id="Selectdate" layoutX="1456.0" layoutY="148.0" onAction="#SelectdateOnAction" promptText="           select date" />
+   </children>
+</AnchorPane>

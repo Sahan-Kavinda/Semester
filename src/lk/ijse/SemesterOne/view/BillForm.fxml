@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="BillFormPane" prefHeight="996.0" prefWidth="1728.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.SemesterOne.controller.BillFormController">
+   <children>
+      <Pane fx:id="loadPane" prefHeight="996.0" prefWidth="1728.0" styleClass="backgroundColor">
+         <children>
+            <HBox prefHeight="80.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/greenandlightgreen.css">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bill Form">
+                     <HBox.margin>
+                        <Insets left="650.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Garamond" size="66.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <Pane fx:id="BilltableandcomboPane" layoutY="90.0" prefHeight="913.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/greenandlightgreen_leftRight.css">
+               <children>
+                  <TableView fx:id="tblBillTable" layoutY="245.0" prefHeight="446.0" prefWidth="1728.0" styleClass="backgroundColor" stylesheets="@../CssFile/greenandlightgreen.css">
+                     <columns>
+                        <TableColumn fx:id="tblcus_id" prefWidth="144.0" text="cus_id" />
+                        <TableColumn fx:id="tblvehicle_number_plate" prefWidth="302.0" text="vehicle_number_plate" />
+                        <TableColumn fx:id="tblvehicle_id" prefWidth="216.0" text="vehicle_id" />
+                        <TableColumn fx:id="tblitem_code" prefWidth="264.0" text="item_code" />
+                        <TableColumn fx:id="tblunit_price" prefWidth="297.0" text="unit_price" />
+                        <TableColumn fx:id="tblqty_on_hand" prefWidth="271.0" text="qty_on_hand" />
+                        <TableColumn fx:id="tbldate" prefWidth="231.0" text="date" />
+                     </columns>
+                  </TableView>
+                  <JFXComboBox fx:id="combillCusId" layoutX="202.0" layoutY="37.0" onAction="#combillCusIdOnAction" prefHeight="31.0" prefWidth="211.0" promptText="        Select cus id" />
+                  <JFXTextField fx:id="txtBillNo" layoutX="100.0" layoutY="37.0" onAction="#dateOnAction" prefHeight="31.0" prefWidth="56.0" />
+                  <Text layoutX="50.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill No" />
+                  <JFXComboBox fx:id="combillItemCode" layoutX="779.0" layoutY="37.0" onAction="#combillItemCodeOnAction" prefHeight="31.0" prefWidth="205.0" promptText="    Select item code" />
+                  <JFXComboBox fx:id="combillunitPrice" layoutX="1078.0" layoutY="37.0" onAction="#combillunitPriceOnAction" prefHeight="31.0" prefWidth="211.0" promptText="     unit price" />
+                  <JFXComboBox fx:id="combillVehicleNumber" layoutX="469.0" layoutY="38.0" onAction="#combillVehicleNumberOnAction" prefHeight="31.0" prefWidth="223.0" promptText="vehicle number" />
+                  <JFXDatePicker fx:id="selectdate" layoutX="1416.0" layoutY="147.0" promptText="  Select Date" />
+                  <JFXButton fx:id="btnpaybill" layoutX="1078.0" layoutY="734.0" onAction="#btnpaybillOnAction" prefHeight="92.0" prefWidth="223.0" style="-fx-background-radius: 30; -fx-border-color: blue; -fx-border-radius: 30;" styleClass="backgroundColor" stylesheets="@../CssFile/greenandlightgreen.css" text="Pay_Bill">
+                     <font>
+                        <Font name="Eras Demi ITC" size="38.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCancel" layoutX="1340.0" layoutY="734.0" onAction="#btnCancelOnAction" prefHeight="92.0" prefWidth="223.0" style="-fx-background-radius: 30; -fx-border-color: blue; -fx-border-radius: 30;" styleClass="backgroundColor" stylesheets="@../CssFile/greenandlightgreen.css" text="Cancel">
+                     <font>
+                        <Font name="Eras Demi ITC" size="38.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <TextField fx:id="txtQtyOnHand" layoutX="1470.0" layoutY="37.0" onAction="#txtQtyOnHandOnAction" promptText="Qty On Hand" />
+                  <Text layoutX="80.0" layoutY="786.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total :">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="txtTotal" layoutX="238.0" layoutY="765.0" promptText="total" />
+                  <Text layoutX="1428.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" />
+                  <JFXComboBox fx:id="combillvehicle_id" layoutX="1072.0" layoutY="147.0" onAction="#combillvehicle_idOnAction" prefHeight="31.0" prefWidth="223.0" promptText="       vehicle_id" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
